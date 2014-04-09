@@ -37,7 +37,7 @@ function DeviceIdentifier() {
  * @param {Function} successCallback The function to call when the heading data is available
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
-Device.prototype.getInfo = function(successCallback, errorCallback) {
+DeviceIdentifier.prototype.getInfo = function(successCallback, errorCallback) {
     argscheck.checkArgs('fF', 'Device.getInfo', arguments);
     exec(successCallback, errorCallback, "DeviceIdentifier", "getDeviceIdentifier", []);
 };

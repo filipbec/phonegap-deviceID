@@ -15,7 +15,7 @@
 
 - (void)getDeviceIdentifier:(CDVInvokedUrlCommand *)command
 {
-    NSDictionary* deviceProperties = [self deviceProperties];
+    NSDictionary* deviceProperties = [self deviceIdentifier];
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:deviceProperties];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }

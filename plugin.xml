@@ -9,10 +9,10 @@
     <description> Device identifier Plugin</description>
     <license>MIT</license>
     <keywords>device,identifier</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git</repo>
+    <repo>https://github.com/filipbec/phonegap-deviceID.git</repo>
 
-    <js-module src="www/device.js" name="device">
-        <clobbers target="device" />
+    <js-module src="www/deviceIdentifier.js" name="deviceIdentifier">
+        <clobbers target="deviceIdentifier" />
     </js-module>
 
     <!-- ios -->
