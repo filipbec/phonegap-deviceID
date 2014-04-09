@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="co.infinum.deviceID"
+    version="0.1.0">
+    <name>DeviceIdentifier</name>
+    <description> Device identifier Plugin</description>
+    <license>MIT</license>
+    <keywords>device,identifier</keywords>
+    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git</repo>
+
+    <js-module src="www/device.js" name="device">
+        <clobbers target="device" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="DeviceIdentifier">
+                <param name="ios-package" value="FBDevice"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/FBDevice.h" />
+        <source-file src="src/ios/FBDevice.m" />
+    </platform>
+
+</plugin>
